@@ -17,6 +17,10 @@
   <a href="[LINK_GITHUB_BERNARDO]">
     <img src="https://img.shields.io/badge/Dev-Bernardo-blue" alt="Bernardo">
   </a>
+
+  <a href="[LINK_GITHUB_VITOR]">
+    <img src="https://img.shields.io/badge/Mentor-Vitor_Zamir-purple" alt="Vitor Zamir">
+  </a>
   
   <a href="[LINK_YOUTUBE_OU_INSTAGRAM]">
     <img src="https://img.shields.io/badge/YouTube-CleanEngeneer-red?logo=youtube" alt="CleanEngeneer YouTube Channel">
@@ -103,6 +107,7 @@
 - **Emanuel** - <i>Mecânica e Design:</i> Responsável pela modelagem 3D, encaixes, estrutura física e tração do robô.
 - **Victor** - <i>Eletrônica e Hardware:</i> Especialista na integração dos circuitos, gerenciamento de energia, cabeamento e comunicação entre placas.
 - **Bernardo** - <i>Programação e Visão:</i> Desenvolvedor das lógicas de controle, processamento de imagem em Python, integração do OpenCV e algoritmos de navegação.
+- **Vitor Zamir** - <i>Mentor:</i> Estudante de Ciência da Computação na UniFBV, Embaixador FIRST e competidor da modalidade de Robótica Móvel. Auxilia a equipe com arquitetura de software de alta performance e estratégia de prova.
 
 ### Conquistas
 - [Ex: 1 Lugar Regional OBR 202X]
