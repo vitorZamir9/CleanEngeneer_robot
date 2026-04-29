@@ -23,7 +23,7 @@
   </a>
   
   <a href="[LINK_YOUTUBE_OU_INSTAGRAM]">
-    <img src="https://img.shields.io/badge/YouTube-CleanEngeneer-red?logo=youtube" alt="CleanEngeneer YouTube Channel">
+    <img src="https://img.shields.io/badge/YouTube-NewAtom-red?logo=youtube" alt="CleanEngeneer YouTube Channel">
   </a>
 </div>
 
