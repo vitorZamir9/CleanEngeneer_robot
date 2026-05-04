@@ -49,28 +49,20 @@
 
 ## Sobre o Projeto
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
+<img src="https://github.com/user-attachments/assets/b2ecc076-d6d6-4bd7-9651-6faeb64b11ed" aling="left" height="190"/>
+<img src="https://github.com/user-attachments/assets/86ce0a5e-0f3c-4e83-a090-5be3ccd89181" aling="right" height="190" />
+<br/>
 
-  <!-- Imagem esquerda -->
-  <img src="URL_DA_IMAGEM_1" height="190"/>
+<p align="justify">
+  Para cumprir todas as tarefas com precisão na <b>OBR</b> e na <b>RoboCup Junior Rescue Line</b>, desenvolvemos a nossa plataforma utilizando uma arquitetura híbrida de hardware: combinamos a robustez e o tempo de resposta em baixo nível de um Arduino com o alto poder de processamento de IA e Visão Computacional de uma Raspberry Pi.
+</p>
 
-  <!-- Texto (o seu mesmo) -->
-  <div style="text-align: center; max-width: 600px;">
-    Para cumprir todas as tarefas com precisão na OBR e na RoboCup Junior Rescue Line,
-    desenvolvemos a nossa plataforma utilizando uma arquitetura híbrida de hardware:
-    combinamos a robustez e o tempo de resposta em baixo nível de um Arduino com o alto
-    poder de processamento de IA e Visão Computacional de uma Raspberry Pi.
+<p align="justify">
+  Neste repositório, detalhamos o nosso sistema de seguimento de linha com PID, a integração serial e a nossa árvore de decisão baseada em processamento de imagem puro e redes neurais.
+</p>
 
-    <br><br>
-
-    Neste repositório, detalhamos o nosso sistema de seguimento de linha com PID,
-    a integração serial e a nossa árvore de decisão baseada em processamento de imagem puro e redes neurais.
-  </div>
-
-  <!-- Imagem direita -->
-  <img src="URL_DA_IMAGEM_2" height="190"/>
-
-</div>
+<br clear="both"/>
+<br/>
 
 ### Componentes Principais
 
