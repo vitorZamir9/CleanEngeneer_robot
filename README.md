@@ -51,7 +51,7 @@
 
 <img src="https://github.com/user-attachments/assets/71ba48c8-0c16-47d5-8de7-86fb43a616d1" align="left" height="270" />
 <br/>
-<img src="https://github.com/user-attachments/assets/71ba48c8-0c16-47d5-8de7-86fb43a616d1" align="left" height="270" />
+ <img src="https://github.com/user-attachments/assets/71ba48c8-0c16-47d5-8de7-86fb43a616d1" align="left" height="270" />
 
 <p align="justify">
   Para cumprir todas as tarefas com precisão na <b>OBR</b> e na <b>RoboCup Junior Rescue Line</b>, desenvolvemos a nossa plataforma utilizando uma arquitetura híbrida de hardware: combinamos a robustez e o tempo de resposta em baixo nível de um Arduino com o alto poder de processamento de IA e Visão Computacional de uma Raspberry Pi.
