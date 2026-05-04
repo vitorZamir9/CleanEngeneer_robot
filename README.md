@@ -52,16 +52,16 @@
 <img src="https://github.com/user-attachments/assets/b2ecc076-d6d6-4bd7-9651-6faeb64b11ed" aling="left" height="190"/>
 <br/>
 
-<p align="justify">
+<p align="center">
   Para cumprir todas as tarefas com precisão na <b>OBR</b> e na <b>RoboCup Junior Rescue Line</b>, desenvolvemos a nossa plataforma utilizando uma arquitetura híbrida de hardware: combinamos a robustez e o tempo de resposta em baixo nível de um Arduino com o alto poder de processamento de IA e Visão Computacional de uma Raspberry Pi.
 </p>
 
-<p align="justify">
+<p align="center">
   Neste repositório, detalhamos o nosso sistema de seguimento de linha com PID, a integração serial e a nossa árvore de decisão baseada em processamento de imagem puro e redes neurais.
 </p>
 
 <br clear="both"/>
-<img src="https://github.com/user-attachments/assets/86ce0a5e-0f3c-4e83-a090-5be3ccd89181" aling="left" height="190" />
+<img src="https://github.com/user-attachments/assets/86ce0a5e-0f3c-4e83-a090-5be3ccd89181" aling="right" height="190" />
 <br/>
 
 ### Componentes Principais
