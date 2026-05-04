@@ -53,9 +53,7 @@
 <br/>
 
 <p align="justify">
-  Para cumprir todas as tarefas com precisão na <b>OBR</b> e na <b>RoboCup Junior Rescue Line</b>, desenvolvemos a nossa plataforma utilizando uma 
-  arquitetura híbrida de hardware: combinamos a robustez e o tempo de resposta em baixo nível de um Arduino com o
-  alto poder de processamento de IA e Visão Computacional de uma Raspberry Pi.
+Para cumprir todas as tarefas com precisão na <b>OBR</b> e na <b>RoboCup Junior Rescue Line</b>, desenvolvemos a nossa plataforma utilizando uma arquitetura híbrida de hardware: combinamos a robustez e o tempo de resposta em baixo nível de um Arduino com o alto poder de processamento de IA e Visão Computacional de uma Raspberry Pi.
 </p>
 
 <p align="justify">
