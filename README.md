@@ -50,6 +50,7 @@
 ## Sobre o Projeto
 
 <img src="https://github.com/user-attachments/assets/71ba48c8-0c16-47d5-8de7-86fb43a616d1" align="left" height="270" />
+<br/>
 <img src="https://github.com/user-attachments/assets/71ba48c8-0c16-47d5-8de7-86fb43a616d1" align="left" height="270" />
 <br/>
 
