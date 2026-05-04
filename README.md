@@ -10,8 +10,8 @@
     <img src="https://img.shields.io/badge/Mecanica-Emanuel-blue" alt="Emanuel">
   </a>
   
-  <a href="[LINK_GITHUB_VICTOR]">
-    <img src="https://img.shields.io/badge/Eletronica-Victor-blue" alt="Victor">
+  <a href="[LINK_GITHUB_VYCTOR]">
+    <img src="https://img.shields.io/badge/Eletronica-Victor-blue" alt="Vyctor">
   </a>
 
   <a href="[LINK_GITHUB_BERNARDO]">
@@ -50,7 +50,7 @@
 ## Sobre o Projeto
 
 <img src="https://github.com/user-attachments/assets/71ba48c8-0c16-47d5-8de7-86fb43a616d1" align="left" height="270" />
-<img src="https://github.com/user-attachments/assets/71ba48c8-0c16-47d5-8de7-86fb43a616d1" align="left" height="270" />
+<img src="https://github.com/user-attachments/assets/71ba48c8-0c16-47d5-8de7-86fb43a616d1" align="right" height="270" />
 <br/>
 
 <p align="justify">
