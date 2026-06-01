@@ -54,7 +54,7 @@ Com a Raspberry ligada vendo a linha e o Arduino ligado pronto para girar os mot
 ## ✅ Checklist Final de Pista
 
 Antes de botar o robô no chão, revise:
-- [ ] A Raspberry está isolada do metal do chassi?
+- [ ] A Raspberry e o Arduino estão fixos?
 - [ ] A câmera está inclinada corretamente para pegar a linha de perto e de longe?
 - [ ] O Arduino está conectado via USB na Raspberry?
 - [ ] A bateria dos motores está com carga e ligada no Driver de Motor?
