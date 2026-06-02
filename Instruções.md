@@ -5,10 +5,10 @@ Tutorial de como preparar o ambiente, estabelecer a conexão de rede (via Wi-Fi 
 ### Preparação do Ambiente e Arquivos
 
 Para começar, você deve organizar os arquivos de trabalho no seu computador extraindo do repositório as seguintes pastas:
-* **`Prog_rasp`**: Contém os scripts e arquivos da Raspberry Pi 5 (incluindo o servidor Flask e o código de visão).
+* **`Pasta_rasp5`**: Contém os scripts e arquivos da Raspberry Pi 5 (incluindo `LINHA.py`, `web_linha.py` e a pasta `debug_videos`).
 * **`Prog_arduino`**: Contém os arquivos responsáveis pelo controle dos motores.
 
-**Ponto Importante:** O arquivo `envia.bat` é o responsável por enviar as atualizações de código do seu PC para a placa.
+**Ponto Importante:** O arquivo `envia.bat` é o responsável por enviar as atualizações de código do seu PC para a placa. Lembre-se de configurá-lo para apontar para o novo IP do Tailscale (`100.72.61.67`).
 
 ### Alimentação de Energia
 
@@ -26,53 +26,54 @@ A Raspberry Pi 5 foi configurada para atuar como um roteador de rede local, mas 
 Se você estiver perto do robô, pode se conectar diretamente à rede sem fio gerada pela própria placa.
 1. No seu computador, abra a lista de redes Wi-Fi disponíveis.
 2. Conecte-se na rede do robô:
-   * **Nome da Rede (SSID):** `new`
+   * **Nome da Rede (SSID):** `CleanNew`
    * **Senha padrão:** `senha123`
-3. **Descobrindo o IP:** Após conectar, acesse o painel de controle/configurações de rede do seu PC, vá nos detalhes da conexão e pegue o IP listado como "Gateway Padrão" ou "Roteador". Este será o IP da sua Raspberry.
+3. **Descobrindo o IP:** Após conectar, acesse o painel de controle/configurações de rede do seu PC, vá nos detalhes da conexão e pegue o IP listado como "Gateway Padrão" ou "Roteador". Este será o IP da sua Raspberry na rede local.
 
 #### MÉTODO 2: Via Tailscale (Para acessar de qualquer distância/rede)
 Este método permite que você acesse o robô de qualquer lugar do mundo, mesmo em redes diferentes.
-1. Baixe o aplicativo do Tailscale na Raspberry e no PC que for usar.
-2. Faça o login em ambas as máquinas para colocá-las na mesma malha de rede.
-3. O Tailscale irá gerar um **IP Novo** exclusivo para a Raspberry. Você usará este IP para se conectar remotamente sem precisar estar conectado no Wi-Fi `new`.
+1. Certifique-se de que o aplicativo do Tailscale está rodando no seu PC.
+2. O Tailscale gerou um **IP Fixo** exclusivo para a Raspberry: **`100.72.61.67`**. Você usará este IP para se conectar remotamente sem precisar estar conectado no Wi-Fi `CleanNew`.
 
 ---
 
 ### Acesso Remoto via SSH
 
-Independentemente do método de rede escolhido, o acesso ao terminal é feito da mesma forma:
+Independentemente do método de rede escolhido, o acesso ao terminal é feito da mesma forma. Recomendamos usar o IP do Tailscale:
 
 1. Aperte as teclas `Win + R`, digite `cmd` e dê Enter para abrir o terminal do seu computador.
-2. Digite o seguinte comando para iniciar a conexão (Substitua `[IP_DA_RASP]` pelo IP que você pegou na rede Wi-Fi ou no Tailscale):
+2. Digite o seguinte comando para iniciar a conexão:
 
-        ssh new@[IP_DA_RASP]
+        ssh new@100.72.61.67
 
 3. Quando solicitado, digite a senha padrão da Raspberry: `senha123`
 
+*(Nota: O ambiente virtual python deve estar ativado para as bibliotecas funcionarem. O seu terminal deve estar com o prefixo `(meu_venv) new@new:~ $` antes de rodar os códigos).*
+
 ---
 
-### Executando a Visão Computacional (LINHA.py) e Dashboard
+### Executando a Visão Computacional e Dashboard
 
 Para iniciar os sistemas de visão do robô, acesse o diretório correto e rode o script.
 
 1. Entre na pasta onde estão as programações digitando:
 
-        cd Prog_rasp/
+        cd Pasta_rasp5/
 
 2. Execute o código principal de visão do robô manualmente:
 
         python3 LINHA.py
 
-**Sobre o Sistema de Visão (`LINHA.py`):**
+**Sobre o Sistema de Visão (`LINHA.py` e `web_linha.py`):**
 * O código possui a identificação das cores verdes (interseções) e o mapeamento dos contornos da linha preta.
 * **Contorno Fatiado:** A identificação dos contornos da linha utiliza uma estratégia de "fatiamento por pontos". Isso significa que o programa analisa trechos da linha mais perto e mais longe da câmera separadamente, permitindo que o robô faça maiores correções ou menores correções com precisão e suavidade nas curvas.
 
 **Acessando as Câmeras (Servidor Flask / Dashboard):**
-O servidor Flask nativo da Rasp 5 foi refeito com um layout muito melhor. Assim que o script `LINHA.py` estiver rodando, abra o navegador do seu computador e digite:
+O servidor Flask nativo da Rasp 5 (`web_linha.py`) foi refeito com um layout muito melhor. Assim que o script `LINHA.py` estiver rodando, abra o navegador do seu computador e digite:
 
-👉 **`http://[IP_DA_RASP]:5000`**
+👉 **`http://100.72.61.67:5000`**
 
-Você terá acesso à visualização do seguidor de linha diretamente pelo navegador do PC.
+Você terá acesso à visualização do seguidor de linha e aos vídeos (`debug_videos`) diretamente pelo navegador do PC.
 
 ---
 
@@ -92,7 +93,7 @@ A comunicação física é feita pelo próprio cabo USB conectado do Arduino na 
 Para não precisar programar diretamente no terminal do robô, você edita no seu PC e envia os arquivos via script.
 
 1. **Pare a execução atual no robô:** No terminal SSH onde o script está rodando, pressione `Ctrl + C`.
-2. **Edite e Salve o Código:** Faça as modificações na sua pasta local `Prog_rasp` pelo editor (como o VS Code) e salve SEMPRE com `Ctrl + S`.
+2. **Edite e Salve o Código:** Faça as modificações na sua pasta local `Pasta_rasp5` pelo editor (como o VS Code) e salve SEMPRE com `Ctrl + S`.
 3. **Execute o arquivo de envio:** Dentro da pasta raiz do seu PC, dê dois cliques no arquivo `envia.bat`.
 4. **Autenticação:** Quando o terminal pedir a senha da Raspberry Pi, digite `senha123` e pressione Enter.
 5. **Rode novamente:** Volte ao seu terminal SSH do robô e execute o comando para iniciar a nova versão:
